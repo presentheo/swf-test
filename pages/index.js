@@ -105,18 +105,21 @@ export default function Home() {
   }, [selection])
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
       </Head>
-      <main className="min-h-screen flex items-center bg-nstp">
+      <main className="min-h-screen flex items-center bg-black bg-main-bg bg-center bg-cover bg-no-repeat">
         <div className="container max-w-screen-sm mx-auto px-5 pt-5 pb-10">
           {/* 이름 입력창 */}
           {userState == 0 && (
             <div>
               <div>
-                <h1 className="text-2xl text-white text-center font-bold md:leading-normal">재미로 하는 테스트!<br/>당신과 닮은 뉴타人은 누구?!?🤣</h1>
+                <h1 className="text-2xl text-white text-center font-bold md:leading-normal">재미로 하는 테스트!<br/>당신과 닮은 댄서는 누구?!</h1>
               </div>
               <div className="mt-10">
                 <label htmlFor="userName" className="sr-only">
