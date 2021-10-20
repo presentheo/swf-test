@@ -107,19 +107,22 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Choose Your Dancer</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
       </Head>
       <main className="min-h-screen flex items-center bg-black bg-main-bg bg-center bg-cover bg-no-repeat">
-        <div className="container max-w-screen-sm mx-auto px-5 pt-5 pb-10">
+        <div className="container max-w-screen-sm mx-auto px-5 pt-5 pb-20">
           {/* 이름 입력창 */}
           {userState == 0 && (
             <div>
               <div>
-                <h1 className="text-2xl text-white text-center font-bold md:leading-normal">재미로 하는 테스트!<br/>당신과 닮은 댄서는 누구?!</h1>
+                <div class="max-w-full object-contain">
+                  <img src="/images/swf-logo.png"/>
+                </div>
+                <h1 className="mt-10 text-2xl text-white text-center font-bold md:leading-normal">재미로 하는 테스트!<br/>당신과 닮은 댄서는 누구?!</h1>
               </div>
               <div className="mt-10">
                 <label htmlFor="userName" className="sr-only">
