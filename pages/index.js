@@ -108,7 +108,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Choose Your Dancer</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
@@ -156,6 +156,9 @@ export default function Home() {
               <div className="mt-4">
                 <Button onClick={() => enterUserInfo()} classList="text-indigo-700 bg-indigo-100 hover:bg-indigo-200">시작하기</Button>
               </div>
+              <div>
+                <p className="text-white text-xs">* 이 콘텐츠는 [Mnet 스트릿 우먼 파이터] 팬이 만든 콘텐츠입니다. </p>
+              </div>
             </div>
           )}
 
@@ -165,17 +168,15 @@ export default function Home() {
               <div className="quiz">
                 <div>
                   {/* 코멘트 영역 */}
-                  {/* <div className="py-4 px-6 mb-4 rounded bg-gray-100 flex flex-row gap-3">
-                    <div className="w-20 h-20 overflow-hidden rounded-full border">
-                      <img className="object-contain" src="/images/muckracker.jpg"></img>
-                    </div>
-                    {progress == 0 && (
+                  <div className="mb-4 bg-gray-100 border rounded overflow-hidden">
+                    <img className="object-contain" src="/images/img_20210825074655_75438571.webp"></img>
+                    {/* {progress == 0 && (
                       <p className="text-md">{`${userName} ${userJob}, 뉴스타파에 온 것을 환영해요. 첫 취재 기대하고 있겠습니다.`}</p>
-                    )}
-                  </div> */}
+                    )} */}
+                  </div>
                   {/* 질문 영역 */}
                   <div>
-                    <p className="text-xl text-white leading-normal">{currentData.question}</p>
+                    <p className="text-md text-white leading-normal">{currentData.question}</p>
                   </div>
                   {/* 답변 리스트 영역 */}
                   <div>

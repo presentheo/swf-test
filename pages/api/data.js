@@ -1,34 +1,50 @@
 const dataSet = [
   {
     id: 1,
-    question: '뉴스타파에 입사한 당신, 첫 취재를 나가게 됐다! 당신이 취재하고 싶은 아이템은?',
+    question: '다른 팀과 처음 만났다. 옆 팀에는 예전부터 친한 친구, 그 옆 팀에는 내게 춤을 가르쳐준 선생님도 있는데 어떻게 할까?',
     answers: [
-      {content: '평범한 사람들의 가슴 아픈 이야기', target: 'valueC', value: 1},
-      {content: '권력기관의 비리를 파헤치는 보도', target: 'valueC', value: -1}
+      {content: '팀마다 찾아가서 반갑게 인사를 나눈다', target: 'valueC', value: 1},
+      {content: '이제 곧 경쟁할 사이. 인사는 나중에 해도 늦지 않는다.', target: 'valueC', value: -1}
     ]
   },
   {
     id: 2,
-    question: '취재할 아이템을 정했다. 생각보다 취재가 어려울 것 같은데... 팀을 이뤄서 취재해볼까?',
+    question: `'약자 지목 배틀'에서 내가 약자로 지목받았다. 지금 당신의 기분은?`,
     answers: [
-      {content: '혼자가 더 편하다.', target: 'valueA', value: -1},
-      {content: '여럿이서 힘을 합쳐 보자', target: 'valueA', value: 1},
+      {content: '내가 약자라고?! 분노로 주먹이 떨린다', target: 'valueC', value: 1},
+      {content: '어차피 배틀에서 이기면 되지 뭐. 쿨하게 받아들인다', target: 'valueC', value: -1}
     ]
   },
   {
     id: 3,
-    question: '취재를 하던 중 잘 풀리지 않는 부분이 있다. 마감 시간은 점점 다가오고 있는데... 어떻게 할까?',
+    question: '배틀 중 상대방의 바지가 다리에 걸렸다! 이대로 있으면 더 이상 퍼포먼스를 못 할수도 있을것 같은데... 일단 도와줄까?',
     answers: [
-      {content: '다시 한 번 자료를 꼼꼼히 살펴본다', target: 'valueB', value: -1},
-      {content: '우선 중요한 부분만 마무리해 두고, 자세한 부분은 나중에 채워 넣는다', target: 'valueB', value: 1},
+      {content: '실수 때문에 퍼포먼스 기회를 날리는 건 안타깝다. 일단 도와준다', target: 'valueA', value: 1},
+      {content: '상대의 실수는 내 기회다! 가만히 지켜본다', target: 'valueA', value: -1},
     ]
   },
   {
     id: 4,
-    question: '다행히 제 시간에 기사를 마감했다. 내일은 내 첫 기사가 공개되는 날! 지금 기분은?',
+    question: '팀원이 1:1 배틀에서 여러 번 패배했다. 속상해서 우는 팀원에게 당신이 건네줄 한 마디는?',
     answers: [
-      {content: '두근두근, 긴장돼서 잠이 안 온다 😥', target: 'valueB', value: -1},
-      {content: '최선을 다했으니 후회도 없다. 내일 일은 내일 생각하자!', target: 'valueB', value: 1},
+      {content: '다음에 더 잘 하면 돼', target: 'valueB', value: -1},
+      {content: '열심히 했어', target: 'valueB', value: 1},
+    ]
+  },
+  {
+    id: 5,
+    question: '중요한 역할을 맡은 팀원이 리허설 중에 다리를 다쳤다. 생각보다 심한 부상인 것 같은데... 다친 팀원은 어떻게든 무대에 오르고 싶다고 고집을 부리는 상황. 어떻게 할까?',
+    answers: [
+      {content: '그래도 건강이 우선이다. 다친 팀원을 빼고 무대에 오른다', target: 'valueC', value: 1},
+      {content: '팀원의 의지를 존중해서 함께 무대에 오른다. ', target: 'valueC', value: -1}
+    ]
+  },
+  {
+    id: 6,
+    question: '심사위원들의 평가를 기다리고 있다. 다음 중 내가 더 듣고 싶은 심사평은?',
+    answers: [
+      {content: '표현하고자 의도한 것이 잘 전달됐다.', target: 'valueB', value: -1},
+      {content: '멋진 퍼포먼스였다. ', target: 'valueB', value: 1},
     ]
   },
   {
