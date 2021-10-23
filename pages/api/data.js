@@ -43,7 +43,7 @@ const dataSet = [
     id: 6,
     question: '심사위원들의 평가를 기다리고 있다. 다음 중 내가 더 듣고 싶은 심사평은?',
     answers: [
-      {content: '표현하고자 의도한 것이 잘 전달됐다.', target: 'valueB', value: -1},
+      {content: '표현하고자 의도한 것을 잘 이해했다. ', target: 'valueB', value: -1},
       {content: '멋진 퍼포먼스였다. ', target: 'valueB', value: 1},
     ]
   },
