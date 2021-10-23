@@ -105,7 +105,7 @@ export default function Home() {
   }, [selection])
 
   return (
-    <div>
+    <div className="bg-gradient-to-r from-indigo-900 via-black to-pink-900">
       <Head>
         <title>Choose Your Dancer</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -113,7 +113,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"/>
       </Head>
-      <main className="min-h-screen flex items-center bg-black bg-main-bg bg-center bg-cover bg-no-repeat">
+      <main className="min-h-screen flex items-center bg-main-bg bg-center bg-cover bg-no-repeat">
         <div className="container max-w-screen-sm mx-auto px-5 pt-5 pb-20">
           {/* 이름 입력창 */}
           {userState == 0 && (
@@ -169,7 +169,7 @@ export default function Home() {
                 <div>
                   {/* 코멘트 영역 */}
                   <div className="mb-4 bg-gray-100 border rounded overflow-hidden">
-                    <img className="object-contain" src="/images/img_20210825074655_75438571.webp"></img>
+                    <img className="object-contain" src="/images/comment_gavi.gif"></img>
                     {/* {progress == 0 && (
                       <p className="text-md">{`${userName} ${userJob}, 뉴스타파에 온 것을 환영해요. 첫 취재 기대하고 있겠습니다.`}</p>
                     )} */}
